@@ -6,11 +6,8 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  document
-    .querySelector(".card")
-    .classList.add("aqui va la funcion q retorna los tipos de carta");
-  document.querySelector(".card").innerHTML =
-    "aqui va la funcion q retorna el numero de carta";
+  document.querySelector(".card").classList.add(generateRandomSuit());
+  document.querySelector(".card").innerHTML = generateRamdonNumber();
 };
 
 //funcion para obtener numero carta
@@ -37,5 +34,7 @@ let generateRamdonNumber = () => {
 //funcion para obtener tipos de carta
 
 let generateRandomSuit = () => {
-    let suit = ["diammon","heart","spade","club"]
-}
+    let suit = ["diammon","heart","spade","club"];
+      let indexSuits = Math.floor(Math.random() * suit.length);
+  return suit[indexSuits];
+};
