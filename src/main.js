@@ -34,7 +34,7 @@ let generateRamdonNumber = () => {
 //funcion para obtener tipos de carta
 
 let generateRandomSuit = () => {
-    let suit = ["diammon","heart","spade","club"];
-      let indexSuits = Math.floor(Math.random() * suit.length);
+  let suit = ["diammond", "heart", "spade", "club"];
+  let indexSuits = Math.floor(Math.random() * suit.length);
   return suit[indexSuits];
 };
